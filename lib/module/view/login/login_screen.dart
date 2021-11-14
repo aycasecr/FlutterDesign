@@ -20,6 +20,7 @@ class _LoginScreenState extends State<LoginScreen> {
       MaterialState.focused,
     };
     if (states.any(interactiveStates.contains)) {
+      /* */
       return Theme.of(context).colorScheme.onSurface;
     }
     return Theme.of(context).colorScheme.onSurface;
