@@ -1,0 +1,10 @@
+{
+    "welcome": "Merhaba",
+    "welcomeUser": "Merhaba {}",
+    "loginText": "Giriş Yapalım",
+    "loginWelcomeText": "Tekrar hoşgeldin, seni çok özlemiştik!",
+    "login": {
+        "title": "Hoşgeldiniz",
+        "signIn": "Giriş Yap"
+    }
+}

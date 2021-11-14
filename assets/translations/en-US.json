@@ -1,0 +1,10 @@
+{
+    "welcome": "Hello there",
+    "welcomeUser": "Hello there {}",
+    "loginText": "Let's log in",
+    "loginWelcomeText": "Welcome again, we missed you so much!",
+    "login": {
+        "title": "Welcome",
+        "signIn": "Login"
+    }
+}
