@@ -141,7 +141,10 @@ class _LoginScreenState extends State<LoginScreen> {
                 styles: Theme.of(context).textTheme.subtitle1?.copyWith(color: Theme.of(context).colorScheme.primary)),
           ],
         ),
-        CustomTextWidget(text: LocaleKeys.forgotPassword.tr(), styles: Theme.of(context).textTheme.headline6)
+        InkWell(
+            onTap: () {},
+            child:
+                CustomTextWidget(text: LocaleKeys.forgotPassword.tr(), styles: Theme.of(context).textTheme.headline6))
       ],
     );
   }
