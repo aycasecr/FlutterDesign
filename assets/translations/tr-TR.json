@@ -1,10 +1,15 @@
 {
     "welcome": "Merhaba",
     "welcomeUser": "Merhaba {}",
-    "loginText": "Giriş Yapalım",
-    "loginWelcomeText": "Tekrar hoşgeldin, seni çok özlemiştik!",
+    "loginText": "Giris Yapalım",
+    "loginWelcomeText": "Tekrar hosgeldin, seni çok özlemistik!",
+    "rememberMe": "Beni Hatırla",
+    "forgotPassword": "Sifremi Unuttum",
+    "signInWithGoogle": "Google ile Giris Yap",
+    "haveAccount": "Bir hesabın yok mu?",
+    "register": "Kayıt Ol",
     "login": {
-        "title": "Hoşgeldiniz",
-        "signIn": "Giriş Yap"
+        "title": "Hosgeldiniz",
+        "signIn": "Giris Yap"
     }
 }

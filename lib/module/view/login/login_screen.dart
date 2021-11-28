@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_design/core/constants/image/image_constants.dart';
+import 'package:flutter_design/core/init/lang/locale-keys.g.dart';
 import 'package:flutter_design/module/widgets/login_form_field_widget.dart';
 import 'package:flutter_design/module/widgets/text_widget.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:easy_localization/src/public_ext.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({Key? key}) : super(key: key);
@@ -61,15 +63,14 @@ class _LoginScreenState extends State<LoginScreen> {
   }
 
   Row registrationOption(BuildContext context) {
-    //Text(LocaleKeys.welcomeUser.tr()),
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        CustomTextWidget(text: 'Bir hesabın yok mu?', styles: Theme.of(context).textTheme.caption),
+        CustomTextWidget(text: LocaleKeys.haveAccount.tr(), styles: Theme.of(context).textTheme.caption),
         SizedBox(width: 10),
         InkWell(
             child: CustomTextWidget(
-                text: 'Kayıt Ol',
+                text: LocaleKeys.register.tr(),
                 styles: Theme.of(context).textTheme.subtitle1?.copyWith(color: Theme.of(context).colorScheme.primary)))
       ],
     );
@@ -90,7 +91,7 @@ class _LoginScreenState extends State<LoginScreen> {
             SvgPicture.asset(ImageConstants.instance.svgAssets.iconGoogleLogo),
             SizedBox(width: 10),
             CustomTextWidget(
-                text: 'Google ile Giris Yap',
+                text: LocaleKeys.signInWithGoogle.tr(),
                 styles: Theme.of(context).textTheme.subtitle1?.copyWith(color: Theme.of(context).colorScheme.primary))
           ],
         ),
@@ -114,7 +115,7 @@ class _LoginScreenState extends State<LoginScreen> {
             shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                 RoundedRectangleBorder(borderRadius: BorderRadius.circular(16.0))),
             backgroundColor: MaterialStateProperty.all<Color>(Theme.of(context).colorScheme.secondaryVariant)),
-        child: CustomTextWidget(text: 'Giris Yap'),
+        child: CustomTextWidget(text: LocaleKeys.login_signIn.tr()),
       ),
     );
   }
@@ -136,18 +137,18 @@ class _LoginScreenState extends State<LoginScreen> {
               },
             ),
             CustomTextWidget(
-                text: 'Beni Hatırla',
+                text: LocaleKeys.rememberMe.tr(),
                 styles: Theme.of(context).textTheme.subtitle1?.copyWith(color: Theme.of(context).colorScheme.primary)),
           ],
         ),
-        CustomTextWidget(text: 'Sifremi Unuttum?', styles: Theme.of(context).textTheme.headline6)
+        CustomTextWidget(text: LocaleKeys.forgotPassword.tr(), styles: Theme.of(context).textTheme.headline6)
       ],
     );
   }
 
   CustomTextWidget loginWelcomeText(BuildContext context) {
     return CustomTextWidget(
-        text: 'Tekrar hosgeldin, seni çok özlemistik!',
+        text: LocaleKeys.loginWelcomeText.tr(),
         styles: Theme.of(context)
             .textTheme
             .headline5
@@ -163,6 +164,7 @@ class loginText extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CustomTextWidget(
-        text: 'Giris Yapalım', styles: Theme.of(context).textTheme.headline4?.copyWith(fontWeight: FontWeight.bold));
+        text: LocaleKeys.loginText.tr(),
+        styles: Theme.of(context).textTheme.headline4?.copyWith(fontWeight: FontWeight.bold));
   }
 }
